@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L1geo</title>
+</head>
+<body>
+    <form name = "calculator" method="post">
+        <label for="Mathematics">Mathematics for Sciences</label>
+        <input type="number" id="Mathematics1" name="Mathematics1" placeholder="First Midterm">
+        <input type="number" id="Mathematics2" name="Mathematics2" placeholder="Second Midterm">
+        <input type="number" id="Mathematics3" name="Mathematics3" placeholder="Final">
+        <input type="button" onclick="math()" value="Submit">
+        <div id="MATH"></div>
+        <br>
+        <br>
+        <label for="Mechanics">Solid and Fluid Mechanics</label>
+        <input type="number" id="Mechanics" name="Mechanics" placeholder="Final">
+        <br>
+        <br>
+        <label for="Thermodynamics">Thermodynamics</label>
+        <input type="number" id="Thermodynamics" name="Thermodynamics" placeholder="Final">
+        <br>
+        <br>
+        <label for="Electro">Electrostatics</label>
+        <input type="number" id="Electro" name="Electro" placeholder="Final">
+        <br>
+        <br>
+        <label for="AoM">Architecture of Matter</label>
+        <input type="number" id="AoM1" name="AoM1" placeholder="First Midterm">
+        <input type="number" id="AoM2" name="AoM2" placeholder="Second Midterm">
+        <input type="number" id="AoM3" name="AoM3" placeholder="Final">
+        <input type="button" onclick="AoM()" value="Submit">
+        <div id="AOM"></div>
+        <br>
+        <br>
+        <label for="ToM">Transformation of Matter</label>
+        <input type="number" id="ToM1" name="ToM1" placeholder="First Midterm">
+        <input type="number" id="ToM2" name="ToM2" placeholder="Second Midterm">
+        <input type="number" id="ToM3" name="ToM3" placeholder="Final">
+        <input type="button" onclick="ToM()" value="Submit">
+        <div id="TOM"></div>
+        <br>
+        <br>
+        <label for="Exp">Experimental Chemistry</label>
+        <input type="number" id="Exp1" name="Exp1" placeholder="Midterm">
+        <input type="number" id="Exp3" name="Exp3" placeholder="Final">
+        <input type="button" onclick="Exper()" value="Submit">
+        <div id="EXPC"></div>
+        <br>
+        <br>
+        <label for="HEMI">Higher Education Methodoligies</label>
+        <input type="number" id="HEMI1" name="HEMI1" placeholder="Midterm">
+        <input type="number" id="HEMI3" name="HEMI3" placeholder="Final">
+        <input type="button" onclick="hemi()" value="Submit">
+        <div id="hemi"></div>
+        <br>
+        <br>
+        <label for="French">French Language</label>
+        <input type="number" id="French1" name="French1" placeholder="First Midterm">
+        <input type="number" id="French2" name="French2" placeholder="Second Midterm">
+        <input type="number" id="French3" name="French3" placeholder="Final">
+        <input type="button" onclick="fr()" value="Submit">
+        <div id="FR"></div>
+        <br>
+        <br>
+        <label for="Eng">English Language</label>
+        <input type="number" id="Eng1" name="Eng1" placeholder="First Midterm">
+        <input type="number" id="Eng2" name="Eng2" placeholder="Second Midterm">
+        <input type="number" id="Eng3" name="Eng3" placeholder="Final">
+        <input type="button" onclick="eng()" value="Submit">
+        <div id="ENG"></div>
+        <br>
+        <br>
+        <label for="Eie">Earth's Internal Envelopes</label>
+        <input type="number" id="Eie" name="Eie" placeholder="Final">
+        <br>
+        <br>
+        <label for="Eee">Earth's External Envelopes</label>
+        <input type="number" id="Eee" name="Eee" placeholder="Final">
+        <br>
+        <br>
+        <input type="button" onclick="Final()" value="Submit All">
+        <div id="Final"></div>
+    </form>
+</body>
+</html>
+
+<script>
+    function math() {
+        let math1 = parseFloat(document.getElementById("Mathematics1").value);
+        let math2 = 2*parseFloat(document.getElementById("Mathematics2").value); 
+        let math3 = 3*parseFloat(document.getElementById("Mathematics3").value);
+        const math_avg = (math1+math2+math3)/6;
+        document.getElementById("MATH").innerHTML = math_avg;
+        return math_avg;
+    }
+
+    function mechanics() {
+        let fluid = 2*parseFloat(document.getElementById("Mechanics").value);
+        return fluid;
+    }
+
+    function Thermodynamics() {
+        let thermo = 2*parseFloat(document.getElementById("Thermodynamics").value);
+        return thermo;
+    }
+
+    function Electro() {
+        let elec = 2*parseFloat(document.getElementById("Electro").value);
+        return elec;
+    }
+
+    function AoM() {
+        let aom1 =0.5*(parseFloat(document.getElementById("AoM1").value));
+        let aom2 = 0.5*(parseFloat(document.getElementById("AoM2").value)); 
+        let aom3 = 1*parseFloat(document.getElementById("AoM3").value);
+        const aom_avg = (aom1+aom2+aom3)/2;
+        document.getElementById("AOM").innerHTML = aom_avg;
+        return aom_avg;
+        }
+
+    function ToM() {
+        let tom1 = 0.5*parseFloat(document.getElementById("ToM1").value);
+        let tom2 = 0.5*parseFloat(document.getElementById("ToM2").value);
+        let tom3 = 1*parseFloat(document.getElementById("ToM3").value);
+        const tom_avg = (tom1+tom2+tom3)/2;
+        document.getElementById("TOM").innerHTML = tom_avg;
+        return tom_avg;
+    }
+
+    function Exper() {
+        let exp1 = parseFloat(document.getElementById("Exp1").value);
+        let exp3 = parseFloat(document.getElementById("Exp3").value);
+        const exp_avg = (exp1+exp3)/2;
+        document.getElementById("EXPC").innerHTML = exp_avg;
+        return exp_avg;
+    }
+
+    function hemi() {
+        let hemi1 = parseFloat(document.getElementById("HEMI1").value);
+        let hemi3 = parseFloat(document.getElementById("HEMI3").value);
+        const hemi_avg = (hemi1+hemi3)/2;
+        document.getElementById("hemi").innerHTML = hemi_avg;
+        return hemi_avg;
+    }
+
+    function fr() {
+        let fr1 = 0.5*parseFloat(document.getElementById("French1").value);
+        let fr2 = 0.75*parseFloat(document.getElementById("French2").value);
+        let fr3 = 0.75*parseFloat(document.getElementById("French3").value);
+        const fr_avg = (fr1+fr2+fr3)/2;
+        document.getElementById("FR").innerHTML = fr_avg;
+        return fr_avg;
+    }
+
+    function eng() {
+        let eng1 = 0.5*parseFloat(document.getElementById("Eng1").value);
+        let eng2 = 0.75*parseFloat(document.getElementById("Eng2").value);
+        let eng3 = 0.75*parseFloat(document.getElementById("Eng3").value);
+        const eng_avg = (eng1+eng2+eng3)/2;
+        document.getElementById("ENG").innerHTML = eng_avg;
+        return eng_avg;
+    }
+
+    function eie() {
+        let eie = parseFloat(document.getElementById("Eie").value);
+        return eie;
+    }
+
+    function eee() {
+        let eee = parseFloat(document.getElementById("Eee").value);
+        return eee;
+    }
+
+    function Final() {
+        let mathem = math();
+        let mecha = mechanics();
+        let ther = Thermodynamics();
+        let aom = AoM();
+        let tom = ToM();
+        let exp = Exper();
+        let Hemi = hemi();
+        let frl = fr();
+        let engl = eng();
+        let eieg = eie();
+        let eeeg = eee();
+        const avg = (mathem+mecha+ther+ther+aom+tom+exp+Hemi+frl+engl+eieg+eeeg)/12;
+        document.getElementById("Final").innerHTML = avg;
+    }
+</script>
