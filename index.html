@@ -251,6 +251,7 @@
         let mathem = math();
         let mecha = mechanics();
         let ther = Thermodynamics();
+        let elec = Electro();
         let aom = AoM();
         let tom = ToM();
         let exp = Exper();
@@ -259,7 +260,11 @@
         let engl = eng();
         let eieg = eie();
         let eeeg = eee();
-        const avg = (mathem+mecha+ther+ther+aom+tom+exp+Hemi+frl+engl+eieg+eeeg)/12;
+        let physics = (mecha+ther+elec)/6;
+        let chem = (aom+tom+exp)/3;
+        let langs = (engl+frl)/2
+        let earth = (eieg+eeeg)/2;
+        const avg = (mathem+physics+chem+Hemi+langs+earth)/6;
         document.getElementById("Final").innerHTML = avg;
     }
 </script>
