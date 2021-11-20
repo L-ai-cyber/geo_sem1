@@ -82,6 +82,10 @@
         <input type="number" id="Eee" name="Eee" placeholder="Final">
         <br>
         <br>
+        <label for="ioi">Introduction to the Oil Industry</label>
+        <input type="number" id="ioi" name="ioi" placeholder="Final">
+        <br>
+        <br>
         <input type="button" onclick="Final()" value="Submit All">
         <div id="Final"></div>
     </form>
@@ -247,6 +251,14 @@
         return eee;
     }
 
+    function ioif() {
+        let ioi = parseFloat(document.getElementById("ioi").value);
+        if (!ioi) {
+            ioi = 0;
+        }
+        return ioi;
+    }
+
     function Final() {
         let mathem = math();
         let mecha = mechanics();
@@ -260,11 +272,12 @@
         let engl = eng();
         let eieg = eie();
         let eeeg = eee();
+        let ioi = ioif();
         let physics = (mecha+ther+elec)/6;
         let chem = (aom+tom+exp)/3;
-        let langs = (engl+frl)/2
+        let langs = (engl+frl)/2;
         let earth = (eieg+eeeg)/2;
-        const avg = (mathem+physics+chem+Hemi+langs+earth)/6;
+        const avg = (mathem+physics+chem+Hemi+langs+earth+ioi)/7;
         document.getElementById("Final").innerHTML = avg;
     }
 </script>
