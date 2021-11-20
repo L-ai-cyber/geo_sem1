@@ -93,6 +93,9 @@
         let math1 = parseFloat(document.getElementById("Mathematics1").value);
         let math2 = 2*parseFloat(document.getElementById("Mathematics2").value); 
         let math3 = 3*parseFloat(document.getElementById("Mathematics3").value);
+        if (!math1) {
+            math1 = 0;
+        }
         if (!math2) {
             math2 = 0;
         }
@@ -132,6 +135,9 @@
         let aom1 =0.5*(parseFloat(document.getElementById("AoM1").value));
         let aom2 = 0.5*(parseFloat(document.getElementById("AoM2").value)); 
         let aom3 = 1*parseFloat(document.getElementById("AoM3").value);
+        if (!aom1) {
+            aom1 = 0;
+        }
         if (!aom2) {
             aom2 = 0;
         }
@@ -147,6 +153,9 @@
         let tom1 = 0.5*parseFloat(document.getElementById("ToM1").value);
         let tom2 = 0.5*parseFloat(document.getElementById("ToM2").value);
         let tom3 = 1*parseFloat(document.getElementById("ToM3").value);
+        if (!tom1) {
+            tom1 = 0;
+        }
         if (!tom2) {
             tom2 = 0;
         }
@@ -161,6 +170,9 @@
     function Exper() {
         let exp1 = parseFloat(document.getElementById("Exp1").value);
         let exp3 = parseFloat(document.getElementById("Exp3").value);
+        if (!exp1) {
+            exp1 = 0;
+        }
         if (!exp3) {
             exp3 = 0;
         }
@@ -172,6 +184,9 @@
     function hemi() {
         let hemi1 = parseFloat(document.getElementById("HEMI1").value);
         let hemi3 = parseFloat(document.getElementById("HEMI3").value);
+        if (!hemi1) {
+            hemi1 = 0;
+        }
         if (!hemi3) {
             hemi3 = 0;
         }
@@ -184,6 +199,9 @@
         let fr1 = 0.5*parseFloat(document.getElementById("French1").value);
         let fr2 = 0.75*parseFloat(document.getElementById("French2").value);
         let fr3 = 0.75*parseFloat(document.getElementById("French3").value);
+        if (!fr1) {
+            fr1 = 0;
+        }
         if (!fr2) {
             fr2 = 0;
         }
@@ -199,6 +217,9 @@
         let eng1 = 0.5*parseFloat(document.getElementById("Eng1").value);
         let eng2 = 0.75*parseFloat(document.getElementById("Eng2").value);
         let eng3 = 0.75*parseFloat(document.getElementById("Eng3").value);
+        if (!eng1) {
+            eng1 = 0;
+        }
         if (!eng2) {
             eng2 = 0;
         }
