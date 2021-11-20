@@ -93,6 +93,12 @@
         let math1 = parseFloat(document.getElementById("Mathematics1").value);
         let math2 = 2*parseFloat(document.getElementById("Mathematics2").value); 
         let math3 = 3*parseFloat(document.getElementById("Mathematics3").value);
+        if (!math2) {
+            math2 = 0;
+        }
+        if (!math3) {
+            math3 = 0;
+        }
         const math_avg = (math1+math2+math3)/6;
         document.getElementById("MATH").innerHTML = math_avg;
         return math_avg;
@@ -100,16 +106,25 @@
 
     function mechanics() {
         let fluid = 2*parseFloat(document.getElementById("Mechanics").value);
+        if (!fluid) {
+            fluid = 0;
+        }
         return fluid;
     }
 
     function Thermodynamics() {
         let thermo = 2*parseFloat(document.getElementById("Thermodynamics").value);
+        if (!thermo) {
+            thermo = 0;
+        }
         return thermo;
     }
 
     function Electro() {
         let elec = 2*parseFloat(document.getElementById("Electro").value);
+        if (!elec) {
+            elec = 0;
+        }
         return elec;
     }
 
@@ -117,6 +132,12 @@
         let aom1 =0.5*(parseFloat(document.getElementById("AoM1").value));
         let aom2 = 0.5*(parseFloat(document.getElementById("AoM2").value)); 
         let aom3 = 1*parseFloat(document.getElementById("AoM3").value);
+        if (!aom2) {
+            aom2 = 0;
+        }
+        if (!aom3) {
+            aom3 = 0;
+        }
         const aom_avg = (aom1+aom2+aom3)/2;
         document.getElementById("AOM").innerHTML = aom_avg;
         return aom_avg;
@@ -126,6 +147,12 @@
         let tom1 = 0.5*parseFloat(document.getElementById("ToM1").value);
         let tom2 = 0.5*parseFloat(document.getElementById("ToM2").value);
         let tom3 = 1*parseFloat(document.getElementById("ToM3").value);
+        if (!tom2) {
+            tom2 = 0;
+        }
+        if (!tom3) {
+            tom3 = 0;
+        }
         const tom_avg = (tom1+tom2+tom3)/2;
         document.getElementById("TOM").innerHTML = tom_avg;
         return tom_avg;
@@ -134,6 +161,9 @@
     function Exper() {
         let exp1 = parseFloat(document.getElementById("Exp1").value);
         let exp3 = parseFloat(document.getElementById("Exp3").value);
+        if (!exp3) {
+            exp3 = 0;
+        }
         const exp_avg = (exp1+exp3)/2;
         document.getElementById("EXPC").innerHTML = exp_avg;
         return exp_avg;
@@ -142,6 +172,9 @@
     function hemi() {
         let hemi1 = parseFloat(document.getElementById("HEMI1").value);
         let hemi3 = parseFloat(document.getElementById("HEMI3").value);
+        if (!hemi3) {
+            hemi3 = 0;
+        }
         const hemi_avg = (hemi1+hemi3)/2;
         document.getElementById("hemi").innerHTML = hemi_avg;
         return hemi_avg;
@@ -151,6 +184,12 @@
         let fr1 = 0.5*parseFloat(document.getElementById("French1").value);
         let fr2 = 0.75*parseFloat(document.getElementById("French2").value);
         let fr3 = 0.75*parseFloat(document.getElementById("French3").value);
+        if (!fr2) {
+            fr2 = 0;
+        }
+        if (!fr3) {
+            fr3 = 0;
+        }
         const fr_avg = (fr1+fr2+fr3)/2;
         document.getElementById("FR").innerHTML = fr_avg;
         return fr_avg;
@@ -160,6 +199,12 @@
         let eng1 = 0.5*parseFloat(document.getElementById("Eng1").value);
         let eng2 = 0.75*parseFloat(document.getElementById("Eng2").value);
         let eng3 = 0.75*parseFloat(document.getElementById("Eng3").value);
+        if (!eng2) {
+            eng2 = 0;
+        }
+        if (!eng3) {
+            eng3 = 0;
+        }
         const eng_avg = (eng1+eng2+eng3)/2;
         document.getElementById("ENG").innerHTML = eng_avg;
         return eng_avg;
@@ -167,11 +212,17 @@
 
     function eie() {
         let eie = parseFloat(document.getElementById("Eie").value);
+        if (!eie) {
+            eie = 0;
+        }
         return eie;
     }
 
     function eee() {
         let eee = parseFloat(document.getElementById("Eee").value);
+        if (!eee) {
+            eee = 0;
+        } 
         return eee;
     }
 
