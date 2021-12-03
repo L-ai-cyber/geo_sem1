@@ -106,7 +106,7 @@
         if (!math3) {
             math3 = 0;
         }
-        const math_avg = (math1+math2+math3)/6;
+        const math_avg = (math1+math2+math3);
         document.getElementById("MATH").innerHTML = math_avg;
         return math_avg;
     }
@@ -148,7 +148,7 @@
         if (!aom3) {
             aom3 = 0;
         }
-        const aom_avg = (aom1+aom2+aom3)/2;
+        const aom_avg = (aom1+aom2+aom3);
         document.getElementById("AOM").innerHTML = aom_avg;
         return aom_avg;
         }
@@ -166,7 +166,7 @@
         if (!tom3) {
             tom3 = 0;
         }
-        const tom_avg = (tom1+tom2+tom3)/2;
+        const tom_avg = (tom1+tom2+tom3);
         document.getElementById("TOM").innerHTML = tom_avg;
         return tom_avg;
     }
@@ -180,7 +180,7 @@
         if (!exp3) {
             exp3 = 0;
         }
-        const exp_avg = (exp1+exp3)/2;
+        const exp_avg = (exp1+exp3);
         document.getElementById("EXPC").innerHTML = exp_avg;
         return exp_avg;
     }
@@ -194,7 +194,7 @@
         if (!hemi3) {
             hemi3 = 0;
         }
-        const hemi_avg = (hemi1+hemi3)/2;
+        const hemi_avg = (hemi1+hemi3);
         document.getElementById("hemi").innerHTML = hemi_avg;
         return hemi_avg;
     }
@@ -212,7 +212,7 @@
         if (!fr3) {
             fr3 = 0;
         }
-        const fr_avg = (fr1+fr2+fr3)/2;
+        const fr_avg = (fr1+fr2+fr3);
         document.getElementById("FR").innerHTML = fr_avg;
         return fr_avg;
     }
@@ -230,13 +230,13 @@
         if (!eng3) {
             eng3 = 0;
         }
-        const eng_avg = (eng1+eng2+eng3)/2;
+        const eng_avg = (eng1+eng2+eng3);
         document.getElementById("ENG").innerHTML = eng_avg;
         return eng_avg;
     }
 
     function eie() {
-        let eie = parseFloat(document.getElementById("Eie").value);
+        let eie = 2*parseFloat(document.getElementById("Eie").value);
         if (!eie) {
             eie = 0;
         }
@@ -244,7 +244,7 @@
     }
 
     function eee() {
-        let eee = parseFloat(document.getElementById("Eee").value);
+        let eee = 2*parseFloat(document.getElementById("Eee").value);
         if (!eee) {
             eee = 0;
         } 
@@ -252,7 +252,7 @@
     }
 
     function ioif() {
-        let ioi = parseFloat(document.getElementById("ioi").value);
+        let ioi = 2*parseFloat(document.getElementById("ioi").value);
         if (!ioi) {
             ioi = 0;
         }
@@ -273,11 +273,11 @@
         let eieg = eie();
         let eeeg = eee();
         let ioi = ioif();
-        let physics = (mecha+ther+elec)/6;
-        let chem = (aom+tom+exp)/3;
-        let langs = (engl+frl)/2;
-        let earth = (eieg+eeeg)/2;
-        const avg = (mathem+physics+chem+Hemi+langs+earth+ioi)/7;
+        let physics = (mecha+ther+elec);
+        let chem = (aom+tom+exp);
+        let langs = (engl+frl);
+        let earth = (eieg+eeeg);
+        const avg = (mathem+physics+chem+Hemi+langs+earth+ioi)/30;
         document.getElementById("Final").innerHTML = avg;
     }
 </script>
